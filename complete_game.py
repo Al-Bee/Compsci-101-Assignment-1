@@ -44,13 +44,13 @@ def check_valid_move(tiles, row_size, grid_size, your_move):
                 tile_row = i
                 tile_col = j
     if (tile_row > 0 
-    and grid_array[tile_row - 1][tile_col] == ''): return True # Check above
+    	and grid_array[tile_row - 1][tile_col] == ''): return True # Check above
     if (tile_row < len(grid_array) - 1 
-    and grid_array[tile_row + 1][tile_col] == ''): return True # Check below
+    	and grid_array[tile_row + 1][tile_col] == ''): return True # Check below
     if (tile_col > 0 
-    and grid_array[tile_row][tile_col - 1] == ''): return True # Check left
+    	and grid_array[tile_row][tile_col - 1] == ''): return True # Check left
     if (tile_col < row_size - 1 
-    and grid_array[tile_row][tile_col + 1] == ''): return True # Check right
+    	and grid_array[tile_row][tile_col + 1] == ''): return True # Check right
     else: return False
 
 def board_complete(input_tiles):
